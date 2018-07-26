@@ -1,3 +1,7 @@
+const appInsights = require("applicationinsights");
+appInsights.setup("966abfb1-cfc1-4ee4-a32e-4904a5f3127e");
+appInsights.start();
+
 // Listen on a specific host via the HOST environment variable
 var host = process.env.HOST || '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
